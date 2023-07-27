@@ -1,0 +1,5 @@
+#!/bin/sh
+while true; do
+    feh --no-fehbg --bg-fill --randomize ~/Pictures/*
+    sleep 5m
+done
