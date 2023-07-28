@@ -8,3 +8,5 @@ keymap.set("n", "<C-t>", ":NvimTreeToggle<CR>")
 
 keymap.set("n", "<C-l>", ":bnext<CR>")
 keymap.set("n", "<C-h>", ":bprevious<CR>")
+
+keymap.set("t", "<C-[>", "<C-\\><C-n>")
