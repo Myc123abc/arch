@@ -1,13 +1,20 @@
-vim.opt.termguicolors = true
-
+return {
+    {
+        "akinsho/bufferline.nvim",
+        lazy = false,
+        priority = 1000,
+        version = "*",
+        config = function()
 require("bufferline").setup {
     options = {
-        diagnostics = "nvim_lsp",
         offsets = {{
             filetype = "NvimTree",
             text = "File Explorer",
             highlight = "Directory",
             text_align = "left"
         }}
+    }
+}
+        end
     }
 }

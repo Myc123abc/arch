@@ -1,3 +1,10 @@
+return {
+    {
+        "nvim-lualine/lualine.nvim",
+        lazy = false,
+        priority = 1000,
+        version = "*",
+        config = function()
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -37,4 +44,7 @@ require('lualine').setup {
   winbar = {},
   inactive_winbar = {},
   extensions = {}
+}
+        end
+    }
 }

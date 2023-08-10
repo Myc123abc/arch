@@ -1,3 +1,10 @@
+return {
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        version = "*",
+        config = function()
 require("tokyonight").setup({
   style = "day", -- `storm`, `moon`, `night`, `day`
   light_style = "day", 
@@ -31,3 +38,6 @@ require("tokyonight").setup({
 })
 
 vim.cmd[[colorscheme tokyonight]]
+        end
+    }
+}

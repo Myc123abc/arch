@@ -1,3 +1,10 @@
+return {
+    {
+        "nvim-treesitter/nvim-treesitter",
+        lazy = false,
+        priority = 1000,
+        version = "*",
+        config = function()
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "vim", "bash", "c", "cpp", "javascript", "json", "lua", "python" },
 
@@ -9,4 +16,7 @@ require'nvim-treesitter.configs'.setup {
     extended_mode = true,
     max_file_lines = nil,
   }
+}
+        end
+    }
 }
