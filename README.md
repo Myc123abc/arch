@@ -8,3 +8,5 @@ Use pacman to install
 * adobe-source-han-sans-cn-fonts, for Chinese, or other fonts from archlinux.org
 
 `sudo make clean install` for every suckless directory, then use startx to run dwm
+
+use `xev` to find keymap for dwm
