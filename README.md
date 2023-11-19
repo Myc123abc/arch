@@ -1,5 +1,5 @@
 # config
-This my config files for arch
+This my config files for arch  
 Use pacman to install
 * xorg xorg-xinit, for dwm
 * feh, for background
