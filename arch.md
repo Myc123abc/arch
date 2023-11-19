@@ -178,16 +178,13 @@ hwclock --systohc
 pacman -S neovim terminus-font          // or other tools which you like, such as vi, vim, nano, etc.
 nvim /etc/locale.gen
 delete / for en_US.UTF-8 UTF-8 and other locale you need, such as zh_CN.UTF-8 UTF-8
-:wq<CR>
 
 locale-gen
 nvim /etc/locale.conf
 LANG=en_US.UTF-8
-:wq<CR>
 
 nvim /etc/vconsole.conf
 FONT=ter-132b           // or other
-:wq<CR>
 ```
 
 ### 14. Configure Network
@@ -236,7 +233,6 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
 // for dual system, need follow commands
 nvim /etc/default/grub
 delete # for GRUB_DISABLE_OS_PROBER=false
-:wq<CR>
 
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -279,7 +275,6 @@ sudo pacman -S tlp
 systemctl enable --now tlp.service
 systemctl mask systemd-rfkill.service
 systemctl mask systemd-rfkill.socket
-sudo 
 ```
 ### 5. GPU
 ```
