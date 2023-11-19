@@ -1,7 +1,7 @@
 # config
 This my config files for arch  
 Use pacman to install
-* xorg xorg-xinit, for dwm
+* xorg xorg-xinit, xorg-server for dwm
 * feh, for background
 * picom, for background
 * adobe-source-code-pro-fonts, for font
