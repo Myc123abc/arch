@@ -88,7 +88,8 @@ Enter           // default last sector
 t               // change type of partition
 Enter or other  // select the parition above you create
 23              // type change to Linux root (x86_64)
-                // if use other architecture, type L to find which you need 
+                // if use other architecture, type L to find which you need
+                // if BIOS, type 83 for linux
 
 p               // check partition, if have mistake, type q quit and operate again
 
