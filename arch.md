@@ -142,9 +142,13 @@ reflector -p https -c China --delay 3 --completion-percent 95 --sort score --sav
 
 ### 9. Install Package
 base is use for basic package
+
 base-devel is use for aur's yay
+
 linux kernel have linux, linux-lts, linux-zen, linux-hardened
+
 linux-firmware is linux firmware
+
 sof-firmware is use for audio
 ```
 pacstrap -K /mnt base base-devel linux linux-firmware sof-firmware
