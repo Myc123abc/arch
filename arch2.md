@@ -103,7 +103,3 @@ export XMODIFIERS="@im=fcitx"
 export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"
 ```
-### 9. Audio
-```
-sudo pacman -S alsa-utils sof-firmware alsa-firmware
-```
