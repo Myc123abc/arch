@@ -287,7 +287,7 @@ sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
 ```
 ### 6. AUR
 ```
-sudo pacman -S base-devel
+sudo pacman -S git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si 
