@@ -243,8 +243,3 @@ swapoff /mnt/swapfile
 umount -R /mnt
 reboot
 ```
-```
-### 9. Audio
-```
-sudo pacman -S alsa-utils sof-firmware alsa-firmware
-```
