@@ -19,7 +19,8 @@ su -            // change to root
 ```
 sudo pacman -Syu        // update all package
 sudo pacman -S package  // install package
-sudo pacman -Rs package // uninstall package
+sudo pacman -R package  // uninstall single package
+sudo pacman -Rs package // uninstall package and its rependencies
 ```
 ### 4. TLP
 ```
