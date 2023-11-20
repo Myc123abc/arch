@@ -142,12 +142,10 @@ reflector -p https -c China --delay 3 --completion-percent 95 --sort score --sav
 
 ### 9. Install Package
 base is use for basic package  
-base-devel is use for aur's yay  
 linux kernel have linux, linux-lts, linux-zen, linux-hardened  
 linux-firmware is linux firmware  
-sof-firmware is use for audio
 ```
-pacstrap -K /mnt base base-devel linux linux-firmware sof-firmware
+pacstrap -K /mnt base linux linux-firmware
 ```
 if have error try follow commands and try install above again
 ```
@@ -289,6 +287,7 @@ sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
 ```
 ### 6. AUR
 ```
+sudo pacman -S base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si 
@@ -349,4 +348,8 @@ add this at the beginning
 export XMODIFIERS="@im=fcitx"
 export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"
+```
+### 9. Audio
+```
+sudo pacman -S alsa-utils sof-firmware alsa-firmware
 ```
