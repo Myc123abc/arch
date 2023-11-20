@@ -237,7 +237,8 @@ delete # for GRUB_DISABLE_OS_PROBER=false
 
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
-
+> If windows boot entry not in grub after reboot, try `sudo os-prober` then make grub-mkconfig again. Then reboot to check.
+> Maybe ntfs-3g is not useful, and GRUB_DISABLE_OS_PROBER unuseful, too. You only need os-prober before you grub-mkconfig. You can try to ignore these.
 ### 17. Reboot
 ```
 exit
