@@ -227,7 +227,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 If use EFI
 ```
-pacman -S grub efibootmgr   // dual system need to install os-prober and ntfs-3g
+pacman -S grub efibootmgr   // dual system need to install os-prober
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
                             // for dual system, /boot should be /efi
 
@@ -237,8 +237,7 @@ delete # for GRUB_DISABLE_OS_PROBER=false
 
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
-> If windows boot entry not in grub after reboot, try `sudo os-prober` then make grub-mkconfig again. Then reboot to check.
-> Maybe ntfs-3g is not useful, and GRUB_DISABLE_OS_PROBER unuseful, too. You only need os-prober before you grub-mkconfig. You can try to ignore these.
+> If windows boot entry not had in grub, you need type 'os-prober' and grub-mkconfig again after you finish install arch and reboot it.
 ### 17. Reboot
 ```
 exit
