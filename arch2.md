@@ -44,7 +44,16 @@ sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
 sudo pacman -S git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si 
+makepkg -si
+if makepkg failed, maybe network error (timeout), in China you can change go proxy
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
+or
+echo "export GO111MODULE=on" >> ~/.profile
+echo "export GOPROXY=https://goproxy.cn" >> ~/.profile
+source ~/.profile
 ```
 ### 7. Shadowsocks
 ```
