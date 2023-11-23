@@ -100,15 +100,10 @@ after when you need run command need proxy
 just add proxychains at first, such as proxychains ping www.google.com
 ```
 ### 8. Input Method
-install noto-fonts-cjk for Chinese font
-
-install fcitx and fcitx-im
-
-install a Chinese supply package, reference https://wiki.archlinux.org/index.php/fcitx#Chinese
 ```
-sudo nvim /etc/profile
-add this at the beginning
-export XMODIFIERS="@im=fcitx"
-export GTK_IM_MODULE="fcitx"
-export QT_IM_MODULE="fcitx"
+sudo pacman -S fcitx5-im
+edit ~/.bashrc and add follow, then login in again
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
 ```
