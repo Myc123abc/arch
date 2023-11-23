@@ -107,7 +107,5 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
-For dwm, need autostart patch
-edit ~/.dwm/autostart.sh
-add fcitx5 -d
+add fcitx5 & to xinitrc before exec dwm
 ```
