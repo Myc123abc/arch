@@ -101,7 +101,7 @@ just add proxychains at first, such as proxychains ping www.google.com
 ```
 ### 8. Input Method
 ```
-sudo pacman -S fcitx5-im
+sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-nord fcitx5-pinyin-zhwiki
 edit ~/.bashrc and add follow, then login in again
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
