@@ -109,4 +109,8 @@ export XMODIFIERS=@im=fcitx
 
 add fcitx5 & to xinitrc before exec dwm
 in fcitx5-configtool, select Pinyin
+
+add follow to .config/fcitx5/conf/classicui.conf
+Theme=Nord-Dark
+then fcitx5 -r
 ```
