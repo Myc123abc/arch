@@ -108,4 +108,5 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
 add fcitx5 & to xinitrc before exec dwm
+in fcitx5-configtool, select Pinyin
 ```
