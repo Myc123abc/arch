@@ -306,3 +306,31 @@ static const char *volumetoggle[] = { "amixer", "sset", "Master", "toggle", NULL
 	{ MODKEY,                       XF86XK_AudioLowerVolume,      spawn,          {.v = volumedown } },
 	{ MODKEY,                       XF86XK_AudioMute,     	      spawn,          {.v = volumetoggle } },
 ```
+### status
+You can use your custom status bar to replace the slstatus, such as
+```
+#!/bin/bash
+while true; do
+  VOLUME=$(amixer get Master | awk -F'[][]' 'END{ print $2":"$4 }')
+  if [[ $VOLUME =~ "on" ]]; then
+    VOLUME=$(echo "$VOLUME" | awk -F : '{ print $1 }')
+  else
+    VOLUME="Mute"
+  fi
+
+  BATTERY=$(cat /sys/class/power_supply/BAT1/capacity)
+
+  LIGHT=$(xbacklight -get)
+
+  TIME=$(date)
+  HOURS=${TIME:(-20):2}
+  if [[ $TIME =~ "PM" ]]; then
+    HOURS=$((HOURS+12))
+  fi
+  MINUTES=${TIME:(-17):2}
+  TIME=$HOURS:$MINUTES
+
+  xsetroot -name "$(printf "[ Volume%4s Light%3s%% Battery%3s%% ] %s " $VOLUME $LIGHT $BATTERY $TIME)"
+  sleep 0.01
+donebattery
+```
