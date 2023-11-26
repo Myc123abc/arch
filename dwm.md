@@ -325,7 +325,11 @@ while true; do
   TIME=$(date)
   HOURS=${TIME:(-20):2}
   if [[ $TIME =~ "PM" ]]; then
-    HOURS=$((HOURS+12))
+    if [[ $HOURS =~ "12" ]]; then
+      HOURS=12
+    else
+      HOURS=$((HOURS+12))
+    fi
   fi
   MINUTES=${TIME:(-17):2}
   TIME=$HOURS:$MINUTES
