@@ -336,5 +336,5 @@ while true; do
 
   xsetroot -name "$(printf "[ Volume%4s Light%3s%% Battery%3s%% ] %s " $VOLUME $LIGHT $BATTERY $TIME)"
   sleep 0.01
-donebattery
+done
 ```
