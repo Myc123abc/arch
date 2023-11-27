@@ -328,7 +328,7 @@ while true; do
     if [[ $HOURS =~ "12" ]]; then
       HOURS=12
     else
-      HOURS=$((HOURS+12))
+      HOURS=$((10#$HOURS+12))
     fi
   fi
   MINUTES=${TIME:(-17):2}
