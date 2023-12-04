@@ -15,7 +15,7 @@ sudo make clean install
 cd ../slstatus
 sudo make clean install
 
-sudo pacman -S xorg-init
+sudo pacman -S xorg-xinit
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
 nvim .xinitrc
