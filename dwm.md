@@ -292,7 +292,7 @@ defaults.pcm.card 2
 speaker-test -c2 to find double playback
 if amixer Master only mono playback
 try pulseaduio tools, such as pavucontrol/pactl
-install pulseaduio-alsa
+install pulseaudio-alsa
 then reboot
 to check amixer sget Master 
 
