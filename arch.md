@@ -71,7 +71,7 @@ p               // print present partition
 g               // create GPT disklabel if you install in a new disk
                 // if you install dual system, this step and next step (create efi) can skip
                 // if you use BIOS, type o instead of p to create MBR disklabel
-                // and BIOS don't need the boot parition so skip next steo (create efi)
+                // and BIOS don't need the boot parition so skip next step (create efi)
 
 n               // create efi partition
 Enter           // default partition number
