@@ -59,6 +59,8 @@ use USB network share
 ### 4. Update System Time
 ```
 timedatectl     // it should be slow 8 hours
+or
+timedatectl set-ntp true // no input message is ok
 ```
 
 ### 5. Disk Partition
