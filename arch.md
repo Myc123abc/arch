@@ -140,6 +140,17 @@ reflector -p https -c China --delay 3 --completion-percent 95 --sort rate --save
 or  // if above error
 
 reflector -p https -c China --delay 3 --completion-percent 95 --sort score --save /etc/pacman.d/mirrorlist
+
+you can also manal edit mirrorlist
+vim /etc/pacman.d/mirrorlist
+in China
+Server = https://mirrors.bfsu.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.zju.edu.cn/archlinux/$repo/os/$arch
+in other country
+Server = https://geo.mirror.pkgbuild.com/$repo/os/$arch
 ```
 
 ### 9. Install Package
